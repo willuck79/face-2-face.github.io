@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .profile-menu {
+            width: 500px;
+            margin: 100px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .profile-header {
+            background-color: #27a21e;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+        .profile-details {
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-details h2 {
+            margin: 0;
+            padding: 0;
+        }
+        .profile-details p {
+            color: #777;
+        }
+        .logout-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #c01a0e;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        .logout-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-menu">
+        <div class="profile-header">
+            <h1>Profile Menu</h1>
+        </div>
+        <img src="dino.png" alt="Profile Photo" class="profile-photo">
+        <div class="profile-details">
+            <h2>Willuck97</h2>
+        </div>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+
+
+
+
+
